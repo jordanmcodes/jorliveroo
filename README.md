@@ -36,7 +36,7 @@ The user stories for the Jorliveroo food delivery application were created with 
     * The customer's order, including items and their prices, appears on the checkout page, matching the figure displayed on the menu page.
     * Button must be red, the text colour white, font size 20 px, and Century Gothic font.
  ## Adding a new item to the database
- * **As a user:**: Admin
+ * **As a user:** Admin
  * **I want to be able to**: Add a new food item into one of the categories.
  * **So that**: The food menu is updated to the latest items for the online store.
  * **Acceptance Criteria**:
@@ -44,14 +44,14 @@ The user stories for the Jorliveroo food delivery application were created with 
     * Item must be assigned a price.
     * Item must be assigned a category so that the database knows which category the item belongs to.
  ## Editing a current item in the database
-  * **As a user:**: Admin
+  * **As a user:** Admin
   * **I want to be able to**: Edit one of the existing items in the database.
   * **So that**: The item is up to date with the latest requirements, for example, the price has changed.
   * **Acceptance Criteria**:
      * The edits are saved in the database.
      * The updates are saved and appear on the application.
   ## Deleting an item from the database
-   * **As a user:**: Admin
+   * **As a user:** Admin
    * **I want to be able to**: Delete one of the existing items from the database.
    * **So that**: The item no longer appears in one of the respective menus in the application.
    * **Acceptance Criteria**:
