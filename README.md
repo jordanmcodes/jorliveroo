@@ -8,7 +8,7 @@ The user stories for the Jorliveroo food delivery application were created with 
 * **I want to be able to**: Choose from a variety of food items on one page.
 * **So that**: I can proceed to checkout at a much quicker pace.
 * **Acceptance Criteria**:
-  1. Button for each category: Pasta, Pizza, Burgers, Fish, Soup, Sides, Curry, Vegan, Gluten Free, Saver Menu, Desserts, and Kids Menu
-  2.  The user can order from a variety of food choices
-  3.  Button font must be Century Gothic (Body), blue text colour, and bold.
+  * Button for each category: Pasta, Pizza, Burgers, Fish, Soup, Sides, Curry, Vegan, Gluten Free, Saver Menu, Desserts, and Kids Menu
+  *  The user can order from a variety of food choices
+  *  Button font must be Century Gothic (Body), blue text colour, and bold.
 
