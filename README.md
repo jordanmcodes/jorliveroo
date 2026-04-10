@@ -24,7 +24,14 @@ My database will be easily manageable by any administrator who needs to step in 
 
 ## User Stories
 The user stories for the Jorliveroo food delivery application were created with MoSCoW methodology in mind. These user stories helped with the application's design, clearly identifying the customer's journey, while also helping the admin team address any required adjustments.
-### Category buttons
+### Login
+* **As a user:** Customer
+* **I want to be able to**: Login using my username and password.
+* **So that**: I can access the food delivery application.
+* **Acceptance Criteria**:
+  * Simple login validation form that requires only a username and password box. 
+  * Once the username and password are entered correctly, users are directed to the main menu.
+  * If the password and or username is incorrect, an error message will appear.
 * **As a user:** Customer
 * **I want to be able to**: Choose from a variety of food items on one page.
 * **So that**: I can proceed to checkout at a much quicker pace.
