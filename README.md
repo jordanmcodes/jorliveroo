@@ -4,9 +4,9 @@ Jorliveroo is a web application for users seeking a simplified food ordering exp
 ## Why my application is easy to use
 My application is easy to use because I have simplified the food ordering system. Instead of multiple tabs, the menus are accessible under one page, with pop-up menus instead of a new page. This will make the application more efficient than its competitors due to its easy-to-use buttons, clear structure, and more. Not only will it be user-friendly through its clear structure, but the buttons will also be clear, color-blind friendly, with font-sizes that are readable on a variety of devices, and a color scheme that matches the core design of the application.
 ## User interactions 
-Here is a full list of interactions that are user can have with my application:
+Here is a full list of interactions that a user can have with my application:
 * A user can enter their username and password to log into the application
-* A user can click on one of the buttons to open up the respective pop up menu
+* A user can click on one of the buttons to open up the respective pop-up menu
 * A user can click the plus icon next to the respective item they wish to add to their basket
 * A user can view the total price of their basket at the bottom of the main menu page
 * A user can proceed to checkout
@@ -15,3 +15,9 @@ Here is a full list of interactions that are user can have with my application:
 * An admin can add items to the database
 * An admin can edit the current item names and or price in the database
 * An admin can remove one of the existing items from the database
+## Database design 
+My database will be easily manageable by any administrator who needs to step in at any given time. The database structure is as follows:
+* id
+* item category
+* item name
+* item price
