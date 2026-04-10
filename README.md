@@ -32,6 +32,7 @@ The user stories for the Jorliveroo food delivery application were created with 
   * Simple login validation form that requires only a username and password box. 
   * Once the username and password are entered correctly, users are directed to the main menu.
   * If the password and or username is incorrect, an error message will appear.
+### Item selection
 * **As a user:** Customer
 * **I want to be able to**: Choose from a variety of food items on one page.
 * **So that**: I can proceed to checkout at a much quicker pace.
