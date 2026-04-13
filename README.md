@@ -39,7 +39,7 @@ The user stories for the Jorliveroo food delivery application were created with 
 * **Acceptance Criteria**:
   * Button for each category: Pasta, Pizza, Burgers, Fish, Soup, Sides, Curry, Vegan, Gluten Free, Saver Menu, Desserts, and Kids Menu.
   *  The user can order from a variety of food choices.
-  *  Button font must be Century Gothic (Body), blue text colour, and bold.
+  *  Button font must be Century Gothic (Body), white text colour, and bold.
 ## Total money box
 * **As a user:** Customer
 * **I want to be able to**: See the total number of their basket before proceeding to checkout.
