@@ -1,4 +1,9 @@
 # Jorliveroo
+
+#Table of Contents
+-[Introduction](#introduction)
+-[User Interactions](#user-interactions)
+
 ## Introduction
 Jorliveroo is a web application for users seeking a simplified food ordering experience. Have you been put off by ordering food simply because of the countless pages, tedious advertisements, and hidden fees? With Jorliveroo, I have simplified this experience, stripping away the tedious components that competitors offer. The main menu will host the twelve different categories, each with its own pop-up menu. From there, users will be able to select the items they want to add from that category. At the bottom of the main menu is the total fee including VAT. The application is designed to lower the anxiety challenges one could face when ordering food. Whether that be unsure of the total fee, or put off by the various pages and advertisements, Jorliveroo is here to lower that anxiety. The users will have a unique login so that they can gain access to the application. 
 ## Why my application is easy to use
