@@ -12,6 +12,8 @@
   - [Adding a new item to the database](#adding-a-new-item-to-the-database)
   - [Editing a current item in the database](#editing-a-current-item-in-the-database)
   - [Deleting an item from the database](#deleting-an-item-from-the-database)
+- [Deployment](#deployment)
+- [Testing](#testing)
   
   
 
