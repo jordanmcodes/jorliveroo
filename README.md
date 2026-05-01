@@ -1,17 +1,17 @@
 # Jorliveroo
 
 # Table of Contents
--[Introduction](#introduction)
--[User Interactions](#user-interactions)
--[Database Design](#database-design)
--[User Stories](#user-stories)
-  -[Item Selection](#item-selection)
-  -[Total Money Box](#total-money-box)
-  -[Category button and pop-up menu](#category-button-and-pop-up-menu)
-  -[Proceed to checkout button](#proceed-to-checkout-button)
-  -[Adding a new item to the database](#adding-a-new-item-to-the-database)
-  -[Editing a current item in the database](#editing-a-current-item-in-the-database)
-  -[Deleting an item from the database](#deleting-an-item-from-the-database)
+- [Introduction](#introduction)
+- [User Interactions](#user-interactions)
+- [Database Design](#database-design)
+- [User Stories](#user-stories)
+  - [Item Selection](#item-selection)
+  - [Total Money Box](#total-money-box)
+  - [Category button and pop-up menu](#category-button-and-pop-up-menu)
+  - [Proceed to checkout button](#proceed-to-checkout-button)
+  - [Adding a new item to the database](#adding-a-new-item-to-the-database)
+  - [Editing a current item in the database](#editing-a-current-item-in-the-database)
+  - [Deleting an item from the database](#deleting-an-item-from-the-database)
   
   
 
