@@ -9,6 +9,7 @@
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
+
 }
 
 .menubuttons {
@@ -21,4 +22,9 @@
 
 body {
      text-align: center;
+}
+
+.menubuttons hover {
+    background-color: grey;
+    color: black;
 }
