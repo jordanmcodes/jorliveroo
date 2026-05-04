@@ -1,4 +1,4 @@
-div .menubuttons button {
+.menubuttons button {
     background-color: lightblue;
     border: none;
     color: white;
@@ -8,4 +8,10 @@ div .menubuttons button {
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
+}
+
+.menubuttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
 }
