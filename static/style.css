@@ -24,7 +24,7 @@ body {
      text-align: center;
 }
 
-.menubuttons hover {
+.menubuttons button:hover {
     background-color: grey;
     color: black;
 }
