@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1> Burgers</h1>
-    
+
      <div class="menu-style">
         {% for item in items %}
             <p> 
@@ -17,5 +17,9 @@
             </p>
         {% endfor %}
         </div>
+
+    <a href="{% url 'menu' %}">
+            Main Menu
+            </a>
 </body>
 </html>
