@@ -10,22 +10,23 @@
 <body>
     <h1> Burgers</h1>
 
-     <div class="menu-style">
         {% for item in items %}
-            <p> 
-                {{ item.name }} - £{{ item.price }}
-                 <form method="POST">
+
+     <div class="menu-style">
+            <p> {{ item.name }} - £{{ item.price }} </p>
+       
+         <form method="POST">
             {% csrf_token %}
             <input type="hidden" name="item_id" value="{{item.id}}">
             <input type="submit" value="Add">
-            
         </form>
-            </p>
-        {% endfor %}
+
         </div>
-       
+        {% endfor %}
+
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
+
 </body>
 </html>
