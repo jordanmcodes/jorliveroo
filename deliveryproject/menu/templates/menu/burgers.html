@@ -16,7 +16,7 @@
 
             <p> {{ item.name }} - £{{ item.price }} </p>
        
-         <form method="POST">
+         <form method="POST" action="{% url 'burgers' %}">
             {% csrf_token %}
             <input type="hidden" name="item_id" value="{{ item.id }}">
             <input type="submit" value="Add">
