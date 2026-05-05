@@ -21,7 +21,18 @@ from menu import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('menu/', views.menu, name='menu'),
+    path('pasta/', views.pasta, name ='pasta'),
+    path('pizza/', views.pizza, name ='pizza'),
     path('burgers/', views.burgers, name ='burgers'),
+    path('fish/', views.fish, name ='fish'),
+    path('soup/', views.soup, name ='soup'),
+    path('sides/', views.sides, name ='sides'),
+    path('curry/', views.curry, name ='curry'),
+    path('vegan/', views.vegan, name ='vegan'),
+    path('gluten-free/', views.gluten_free, name ='gluten_free'),
+    path('saver-menu/', views.saver_menu, name ='saver_menu'),
+    path('desserts/', views.desserts, name ='desserts'),
+    path('kids-menu/', views.kids_menu, name ='kids_menu'),
 ]
 
 
