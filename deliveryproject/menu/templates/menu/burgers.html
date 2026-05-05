@@ -10,6 +10,9 @@
 <body>
     <h1> Burgers</h1>
      <div class="menu-style">
+        {% if chosen_item %}
+        <p>Item added: {{ chosen_item}}</p>
+        {% endif %}
     {% for item in items %}
     <div>
     <p> {{ item.name }} - £{{ item.price }} </p>
