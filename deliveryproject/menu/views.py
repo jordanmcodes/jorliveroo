@@ -6,11 +6,12 @@ def menu(request):
     return render(request, 'menu/menu.html',{'items': items})
 
 def burgers (request):
+    chosen_item = None
     if request.method == "POST":
         item_id = request.POST.get ("item_id")
-        print(item_id)
+        chosen_item = item_id
     items = FoodItem.objects.filter(category__name="Burgers")
-    return render (request, 'menu/burgers.html', {'items': items} )
+    return render (request, 'menu/burgers.html', {'items': items, 'chosen_item': chosen_item} )
 
 def pasta (request):
     items = FoodItem.objects.filter(category__name="Pasta")

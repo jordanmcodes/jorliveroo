@@ -10,11 +10,9 @@
 <body>
     <h1> Burgers</h1>
      <div class="menu-style">
-                {% for item in items %}
-
-        <div>
-
-            <p> {{ item.name }} - £{{ item.price }} </p>
+    {% for item in items %}
+    <div>
+    <p> {{ item.name }} - £{{ item.price }} </p>
        
          <form method="POST" action="{% url 'burgers' %}">
             {% csrf_token %}
