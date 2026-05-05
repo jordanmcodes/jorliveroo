@@ -8,5 +8,10 @@
 <body>
         <h1>Soup</h1>
 
+        {% for item in items %}
+            <p> 
+                {{ item.name }} - £{{ item.price }}
+            </p>
+        {% endfor %}
 </body>
 </html>
