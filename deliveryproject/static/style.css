@@ -1,4 +1,4 @@
-.menubuttons button {
+.menubuttons a {
     background-color: lightblue;
     border: none;
     color: white;
@@ -24,7 +24,7 @@ body {
      text-align: center;
 }
 
-.menubuttons button:hover {
+.menubuttons a:hover {
     background-color: grey;
     color: black;
 }
