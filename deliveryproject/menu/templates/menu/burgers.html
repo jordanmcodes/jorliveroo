@@ -17,6 +17,7 @@
                  <form method="POST">
             {% csrf_token %}
             <input type="submit" value="Add">
+            <input type="hidden" name="item_id" value="{{item.id}}">
         </form>
             </p>
         {% endfor %}
