@@ -19,6 +19,7 @@ from django.urls import path
 from menu import views 
 
 urlpatterns = [
+    path("",views.menu),
     path('admin/', admin.site.urls),
     path('menu/', views.menu, name='menu'),
     path('pasta/', views.pasta, name ='pasta'),
