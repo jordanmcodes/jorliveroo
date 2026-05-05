@@ -14,11 +14,14 @@
         {% for item in items %}
             <p> 
                 {{ item.name }} - £{{ item.price }}
-                <button>Add to cart</button>
+                 <form method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Add">
+        </form>
             </p>
         {% endfor %}
         </div>
-
+       
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
