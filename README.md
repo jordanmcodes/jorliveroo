@@ -12,6 +12,8 @@
   - [Adding a new item to the database](#adding-a-new-item-to-the-database)
   - [Editing a current item in the database](#editing-a-current-item-in-the-database)
   - [Deleting an item from the database](#deleting-an-item-from-the-database)
+- [Who was the target audience?](#who-was-the-target-audience)
+
 - [Deployment](#deployment)
 - [Testing](#testing)
   
@@ -105,3 +107,10 @@ The user stories for the Jorliveroo food delivery application were created with 
       * The item is removed from the application.
       * The item is removed from the database.
       * The database is saved to reflect the new menu.
+## Who was the target audience?
+The primary target audience for those using the jorliveroo appplication is those who want to order food from their mobile, but choose not to due to stress or anxiety that other applications offer. Many can be complex, include hidden fees, and take up a lot more time than is needed. Therefore, the app is designed for those:
+* Who want a quick service
+* Want to know the exact price they need to budget for
+* Lower their anxiety when ordering food online
+
+The jorliveroo app is easy to use thanks to the clean, one-page user interface that has every menu accessible on one screen. As noted above, the prices are accurate, allowing for less anxiety and exact knowledge of the price of their order with VAT and delivery fees added onto the price from the beginning. 
