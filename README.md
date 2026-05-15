@@ -125,4 +125,4 @@ The goals for the UX design aimed at keeping the application simple, with clear 
 ### Wireframes 
 Before I began the creation of my application, I first needed to design it using wireframes. This gave me the foundations necessary to complete the full build of the application. The wireframes outlined the simplicity of the application, showcasing just how easy it is to navigation the jorliveroo food application. Below you can see the complete wireframes for my app:
 
-![Wireframes](jorliveroo/deliveryproject/static/images/wireframes.png)
+![Wireframes](deliveryproject/static/images/wireframes.png)
