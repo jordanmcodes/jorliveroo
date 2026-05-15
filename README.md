@@ -114,3 +114,9 @@ The primary target audience for those using the jorliveroo appplication is those
 * Lower their anxiety when ordering food online
 
 The jorliveroo app is easy to use thanks to the clean, one-page user interface that has every menu accessible on one screen. As noted above, the prices are accurate, allowing for less anxiety and exact knowledge of the price of their order with VAT and delivery fees added onto the price from the beginning. 
+
+## User Experience (UX)
+We have all had our bad experiences with delivery applications. Whether they are unable to locate a driver, cancel your order after waiting an hour, or not telling you the full story when it comes to price. 
+
+The goals for the UX design aimed at keeping the application simple, with clear buttons, readable font sizes, variety of colours, a navigation system that is very simple to use, and a simple page layout, with no added extras. Transparency is also a key feature when it comes to the price, what you see is what you get, no hidden fees. 
+
