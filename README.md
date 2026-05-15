@@ -126,3 +126,31 @@ The goals for the UX design aimed at keeping the application simple, with clear 
 Before I began the creation of my application, I first needed to design it using wireframes. This gave me the foundations necessary to complete the full build of the application. The wireframes outlined the simplicity of the application, showcasing just how easy it is to navigation the jorliveroo food application. Below you can see the complete wireframes for my app:
 
 ![Wireframes](deliveryproject/static/images/wireframes.png)
+
+## Project Management 
+
+The application was developed using Agile principles which was handled via Github's issues and commitments so that I can track my progress. From there, I was able to plan each stage of the project:
+
+A kanban board was created with each task getting its own lable to categorise its importance, for example each page needed a button, this button was a "Must Have". An example of a "if I get time" feature would be background music. 
+
+As showcased above, User Stories were created to showcase the importance of each task the application can handle. These stories would showcase the perspective of both the user using the application, and a member of the developing team needing to make an adjustment to the database. 
+
+### Version Control via Commits
+Github was used throughout the development phase of the project to support the Agile practices. This was achieved via commits, showcasing the progress I made at each step. 
+
+Commits allowed me to:
+* Develop the application safely even with errors as I can go back and amend them.
+* Monitor the progress made. 
+* Reflect on the changes that were made to the application throughout its development cycle. 
+
+### Benefits of Agile
+
+Agile practices significantly improved my approach to the applications development:
+
+* My organisational skills were kept in line thanks to the Kanban board.
+* Had the ability to go back if a critical error was made.
+* With commits, I was able to monitor my progress without feeling overwhelmed.
+
+Below, you can see an image of the Kanban board when I first began the project:
+
+![Kanban](deliveryproject/static/images/kanban.png)
