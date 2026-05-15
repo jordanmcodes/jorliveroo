@@ -120,3 +120,9 @@ We have all had our bad experiences with delivery applications. Whether they are
 
 The goals for the UX design aimed at keeping the application simple, with clear buttons, readable font sizes, variety of colours, a navigation system that is very simple to use, and a simple page layout, with no added extras. Transparency is also a key feature when it comes to the price, what you see is what you get, no hidden fees. 
 
+## Application planning 
+
+### Wireframes 
+Before I began the creation of my application, I first needed to design it using wireframes. This gave me the foundations necessary to complete the full build of the application. The wireframes outlined the simplicity of the application, showcasing just how easy it is to navigation the jorliveroo food application. Below you can see the complete wireframes for my app:
+
+[Wireframes](jorliveroo/deliveryproject/static/images/wireframes.png)
