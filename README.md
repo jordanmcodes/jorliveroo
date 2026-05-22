@@ -154,3 +154,4 @@ Agile practices significantly improved my approach to the applications developme
 Below, you can see an image of the Kanban board when I first began the project:
 
 ![Kanban](deliveryproject/static/images/kanban.png)
+
