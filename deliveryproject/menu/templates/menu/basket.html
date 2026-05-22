@@ -8,6 +8,9 @@
     <title>Basket Page</title>
 </head>
 <body>
-    
+    <h1>Thank you for shopping with Jorliveroo!</h1>
+    {% for item in basket %}
+    <p>{{item}}</p>
+    {% endfor %}
 </body>
 </html>
