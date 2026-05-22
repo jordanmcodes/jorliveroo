@@ -7,6 +7,7 @@ def menu(request):
 
 def burgers (request):
     basket = request.session.get('basket', [])
+    chosen_item = None
     if request.method == "POST":
         item_id = request.POST.get ("item_id")
         chosen_item = item_id
