@@ -8,6 +8,12 @@
     <title>Basket Page</title>
 </head>
 <body>
+    {% if checked_out %}
+    <h1> Your order has been confirmed!</h1>
+    <p>Address:{{ address }}</p>
+    <p>Telephone Number: {{ phone }}</p>
+    <p> Your order will be at your door in 30 minutes!</p>
+    {% else %}
     <h1>Thank you for shopping with Jorliveroo!</h1>
     {% for item in items %}
    <p> {{ item.name }} - £{{ item.price }} </p>
@@ -32,6 +38,6 @@
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
-
+    {% endif %}
 </body>
 </html>

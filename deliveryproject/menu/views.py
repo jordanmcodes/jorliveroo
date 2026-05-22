@@ -142,6 +142,12 @@ def basket (request):
      basket = request.session.get('basket', [])
      if request.method == "POST":
          remove_item = request.POST.get("remove_item")
+         checkout=request.POST.get("checkout")
+         if checkout:
+             address = request.POST.get("address")
+             phone = request.POST.get("phone")
+             card = request.POST.get("card")
+             return render(request, 'menu/basket.html',{'address': address, 'phone': phone, 'checked_out': True})
          if remove_item:
              basket.remove(remove_item)
              request.session['basket'] = basket
