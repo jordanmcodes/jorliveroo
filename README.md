@@ -212,5 +212,12 @@ In order to ensure that the application worked as intended, I conducted manual t
 | Checkout form | Form allows me to type details in | Pass | 
 | Checkout button | After clicking, the order confirmation appears with customer details and expected wait time | Pass | 
 
+### Device testing 
+This application was tested on a variety of devices, ensuring it can function without any errors regardless of the device:
+* Desktop PC 
+* Smartphone 
+* Tablet
+
+## Validation 
 
 ## Deployment
