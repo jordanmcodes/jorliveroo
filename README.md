@@ -202,3 +202,15 @@ Below are images from the application, including the home menu, one of the food 
 ### Order Confirmation
 ![Order Confirmation](deliveryproject/static/images/orderconfirmation.png)
 
+## Testing
+In order to ensure that the application worked as intended, I conducted manual testing for the apps functions:
+| Testing Feature | Expected Outcome | Result |
+|---|---|---|
+| Add a food item to the basket | The item and its price appears in the basket | Pass | 
+|Remove an item from the basket area | Item removed and the price altered to reflect new price | Pass |
+| Clear basket using clear button | Basket is removed and the price is reset to £0 | Pass |
+| Checkout form | Form allows me to type details in | Pass | 
+| Checkout button | After clicking, the order confirmation appears with customer details and expected wait time | Pass | 
+
+
+## Deployment
