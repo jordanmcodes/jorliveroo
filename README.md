@@ -223,3 +223,29 @@ This application was tested on a variety of devices, ensuring it can function wi
 * Likewise, CSS was validated using the W3C validation
 * Python in compliance with PEP8
 ## Deployment
+
+My application was deployed using Heroku. Here is how you can deploy the application yourself:
+* Create an account on Heroku
+* In the top right corner click new 
+* New application
+* Connect the Github reponsitory to Heroku 
+
+https://github.com/jordanmcodes/jorliveroo.git
+
+* Add config vars: * SECRET_KEY
+* Using Heroku, Deply the application 
+
+If you're deploying locally:
+* git close (insert repository)
+* cd deliveryproject
+* pip install -r requirements.txt
+* python manage.py runserver
+
+## Security
+To ensure that Data Protection is present at all times, several measures were put in place: 
+### CSRF
+All forms in the jorliveroo application have CSRF protection enabled. This is to prevent attacks such as forgery.
+### SECRET KEY
+All sensitive and delicate information such as SECRET KEYS are hidden using environment variables.
+### DEBUG Mode 
+DEBUG Mode is turned off in the production of the jorliveroo application. 
