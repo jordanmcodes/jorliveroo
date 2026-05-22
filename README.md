@@ -219,5 +219,7 @@ This application was tested on a variety of devices, ensuring it can function wi
 * Tablet
 
 ## Validation 
-
+* HTML was validated via the W3C validation
+* Likewise, CSS was validated using the W3C validation
+* Python in compliance with PEP8
 ## Deployment
