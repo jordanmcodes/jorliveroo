@@ -13,7 +13,14 @@
   - [Editing a current item in the database](#editing-a-current-item-in-the-database)
   - [Deleting an item from the database](#deleting-an-item-from-the-database)
 - [Who was the target audience?](#who-was-the-target-audience)
-
+- [Why my application is easy to use](#why-my-application-is-easy-to-use)
+-[User Experience](#user-experience-ux)
+-[Application planning](#application-planning)
+-[Project Management](#project-management)
+-[Features](#features)
+-[Application images](#application-images)
+-[Validation](#validation)
+-[Security Measures](#security)
 - [Deployment](#deployment)
 - [Testing](#testing)
   
