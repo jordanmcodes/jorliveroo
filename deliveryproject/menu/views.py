@@ -140,6 +140,7 @@ def kids_menu (request):
 
 def basket (request):
      basket = request.session.get('basket', [])
+     items = FoodItem.objects.filter(id__in=basket)
      return render (request, 'menu/basket.html', {
-         'basket': basket
+         'items': items
      })
