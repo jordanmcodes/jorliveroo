@@ -120,6 +120,14 @@ We have all had our bad experiences with delivery applications. Whether they are
 
 The goals for the UX design aimed at keeping the application simple, with clear buttons, readable font sizes, variety of colours, a navigation system that is very simple to use, and a simple page layout, with no added extras. Transparency is also a key feature when it comes to the price, what you see is what you get, no hidden fees. 
 
+### Accessibility
+As mentioned above, the application was designed with accessibility as a core focus:
+* Easy to read buttons
+* Readable font sizes
+* Simple layout
+* No clashing colours
+* Responsive design that is also suitable for mobile and other devices. 
+
 ## Application planning 
 
 ### Wireframes 
@@ -193,3 +201,4 @@ Below are images from the application, including the home menu, one of the food 
 
 ### Order Confirmation
 ![Order Confirmation](deliveryproject/static/images/orderconfirmation.png)
+
