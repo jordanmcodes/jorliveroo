@@ -155,3 +155,41 @@ Below, you can see an image of the Kanban board when I first began the project:
 
 ![Kanban](deliveryproject/static/images/kanban.png)
 
+## Features
+These are the features that are the heart and soul of the application, without these, the app wouldn't function:
+* 12 food categories
+* 12 category pages
+* Go to basket button and page
+* Add items to the basket
+* Remove items from the basket
+* View price of the order at the basket page
+* Checkout details: AddresS, Number, and how long the order will take
+* Order confirmation
+
+### Administrative features
+These are the tasks that the admin can do in the database: 
+* Add food items 
+* Edit current food items
+* Delete food items 
+* Assign a price to each food item
+
+### Future planning
+These are features that I wish to implement in the future: 
+* Payment system
+* Order number
+* Unique login page
+* Order history
+
+## Application images
+Below are images from the application, including the home menu, one of the food categories, the basket page, and order confirmation on the basket page.
+### Menu
+![Menu](deliveryproject/static/images/mainmenu.png)
+
+### Category page
+![Gluten Free](deliveryproject/static/images/glutenfree.png)
+
+### Basket
+![Basket](deliveryproject/static/images/basketpage.png)
+
+### Order Confirmation
+![Order Confirmation](deliveryproject/static/images/orderconfirmation.png)
