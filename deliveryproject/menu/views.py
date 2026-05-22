@@ -143,6 +143,10 @@ def basket (request):
      if request.method == "POST":
          request.session['basket'] = []
      items = FoodItem.objects.filter(id__in=basket)
+     total = 0
+     for item in items:
+        total+= item.price
      return render (request, 'menu/basket.html', {
-         'items': items
+         'items': items,
+         'total': total
      })

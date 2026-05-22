@@ -12,7 +12,7 @@
     {% for item in items %}
    <p> {{ item.name }} - £{{ item.price }} </p>
     {% endfor %}
-
+<p>Total Price: £{{ total }}</p>
     <form method="post">
         {% csrf_token %}
         <input type="submit" value="Clear ">
@@ -20,5 +20,6 @@
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
+
 </body>
 </html>
