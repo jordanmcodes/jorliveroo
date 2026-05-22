@@ -8,16 +8,25 @@
     <title>Curry</title>
 </head>
 <body>
-        <h1>Curry</h1>
-        
-        <div class="menu-style">
-        {% for item in items %}
-            <p> 
-                {{ item.name }} - £{{ item.price }}
-            </p>
+    <h1> Curry</h1>
+     <div class="menu-style">
+        {% if chosen_item %}
+        <p>Item added: {{ chosen_item}}</p>
+        {% endif %}
+    {% for item in items %}
+    <div>
+    <p> {{ item.name }} - £{{ item.price }} </p>
+       
+         <form method="POST" action="{% url 'curry' %}">
+            {% csrf_token %}
+            <input type="hidden" name="item_id" value="{{ item.id }}">
+            <input type="submit" value="Add">
+        </form>
+        </div>
         {% endfor %}
         </div>
-        <a href="{% url 'menu' %}" class= "backtomenubutton">
+
+    <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
 </body>

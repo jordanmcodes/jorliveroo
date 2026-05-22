@@ -8,17 +8,50 @@
     <title>Saver Menu</title>
 </head>
 <body>
-        <h1>Saver Menu</h1>
-
-<div class="menu-style">
-        {% for item in items %}
-            <p> 
-                {{ item.name }} - £{{ item.price }}
-            </p>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gluten Free</title>
+</head>
+<body>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curry</title>
+</head>
+<body>
+    <h1> Saver Menu</h1>
+     <div class="menu-style">
+        {% if chosen_item %}
+        <p>Item added: {{ chosen_item}}</p>
+        {% endif %}
+    {% for item in items %}
+    <div>
+    <p> {{ item.name }} - £{{ item.price }} </p>
+       
+         <form method="POST" action="{% url 'saver_menu' %}">
+            {% csrf_token %}
+            <input type="hidden" name="item_id" value="{{ item.id }}">
+            <input type="submit" value="Add">
+        </form>
+        </div>
         {% endfor %}
         </div>
-        <a href="{% url 'menu' %}" class= "backtomenubutton">
+
+    <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
+</body>
+</html>
+</body>
+</html>
 </body>
 </html>
