@@ -1,3 +1,4 @@
+/* Used to style the main category buttons*/
 .menubuttons a {
     background-color: lightblue;
     border: none;
@@ -12,6 +13,8 @@
 
 }
 
+/* Used to create the grid for the buttons*/
+
 .menubuttons {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -19,6 +22,8 @@
     justify-content: center;
     margin-top: 140px;
 }
+
+/* Used to style the main background of the page */
 
 body {
      text-align: center;
