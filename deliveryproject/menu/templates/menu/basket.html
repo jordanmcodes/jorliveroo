@@ -11,12 +11,16 @@
     <h1>Thank you for shopping with Jorliveroo!</h1>
     {% for item in items %}
    <p> {{ item.name }} - £{{ item.price }} </p>
+   <form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="remove_item" value="{{ item.id }}">
+    <input type="submit" value="Remove">
+   </form>
     {% endfor %}
-<p>Total Price: £{{ total }}</p>
-    <form method="post">
-        {% csrf_token %}
-        <input type="submit" value="Clear ">
-        <input type ="submit" value="Remove"
+    <p>Total Price: £{{ total }}</p>
+     <form method="post">
+    {% csrf_token %}
+    <input type="submit" value="Clear ">
     </form>
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
