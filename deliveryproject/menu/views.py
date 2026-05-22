@@ -141,7 +141,12 @@ def kids_menu (request):
 def basket (request):
      basket = request.session.get('basket', [])
      if request.method == "POST":
-         request.session['basket'] = []
+         remove_item = request.POST.get("remove_item")
+         if remove_item:
+             basket.remove(remove_item)
+             request.session['basket'] = basket
+         else:
+            request.session['basket'] = []
      items = FoodItem.objects.filter(id__in=basket)
      total = 0
      for item in items:
