@@ -256,3 +256,10 @@ All forms in the jorliveroo application have CSRF protection enabled. This is to
 All sensitive and delicate information such as SECRET KEYS are hidden using environment variables.
 ### DEBUG Mode 
 DEBUG Mode is turned off in the production of the jorliveroo application. 
+
+## Acknowledgements 
+All supportive code for this application came from the following sources:
+* W3Schools
+* Django Documentation
+* MDN Web Docs
+* Code Institute 
