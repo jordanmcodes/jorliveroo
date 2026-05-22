@@ -8,6 +8,7 @@
     <title>Basket Page</title>
 </head>
 <body>
+    <!-- Once pressed, the order confirmation appears on the page-->
     {% if checked_out %}
     <h1> Your order has been confirmed!</h1>
     <p>Address:{{ address }}</p>
@@ -15,6 +16,8 @@
     <p> Your order will be at your door in 30 minutes!</p>
     {% else %}
     <h1>Thank you for shopping with Jorliveroo!</h1>
+    <!-- Displays all of the items that the customer has selected-->
+
     {% for item in items %}
    <p> {{ item.name }} - £{{ item.price }} </p>
    <form method="post">
@@ -23,7 +26,11 @@
     <input type="submit" value="Remove">
    </form>
     {% endfor %}
+    <!-- When items are selected, the total price will be displayed here -->
+
     <p>Total Price: £{{ total }}</p>
+    <!-- A section to allow the customer to enter their details before checking out-->
+
         <form method="post">
         {% csrf_token %}
         <input type="text" name="address" placeholder="Please enter your address">
