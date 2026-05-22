@@ -13,6 +13,10 @@
    <p> {{ item.name }} - £{{ item.price }} </p>
     {% endfor %}
 
+    <form method="post">
+        {% csrf_token %}
+        <input type="submit" value="Clear ">
+    </form>
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
