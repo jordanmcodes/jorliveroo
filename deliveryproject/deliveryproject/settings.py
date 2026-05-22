@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'deliveryproject.urls'
+ROOT_URLCONF = 'deliveryproject.deliveryproject.urls'
 
 TEMPLATES = [
     {
@@ -66,8 +66,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'deliveryproject.wsgi.application'
-
+WSGI_APPLICATION = 'deliveryproject.deliveryproject.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
@@ -117,3 +116,5 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
