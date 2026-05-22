@@ -10,6 +10,7 @@ def burgers (request):
     chosen_item = None
     if request.method == "POST":
         item_id = request.POST.get ("item_id")
+        request.session['basket'] = basket
         chosen_item = item_id
     items = FoodItem.objects.filter(category__name="Burgers")
     return render (request, 'menu/burgers.html', {'items': items, 'chosen_item': chosen_item} )
