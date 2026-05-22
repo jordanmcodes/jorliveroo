@@ -49,7 +49,15 @@ My database will be easily manageable by any administrator who needs to step in 
 * item category
 * item name
 * item price
-
+## Relationship Diagram
+The foundations for the application was designed using a simple entity relationship diagram. The model ensures the food items are put in their respective categories correctly:
+![ERD](deliveryproject/static/images/erd.png)
+### Relationships:
+Here is how those relationships above are linked to one another:
+* Each food item belongs to a singular category.
+* One category will contain multiple food items.
+* Food items are linked to categories using a foreign key. 
+* Database structure allows administrators to add, edit, and remove items from categories.
 ## User Stories
 The user stories for the Jorliveroo food delivery application were created with MoSCoW methodology in mind. These user stories helped with the application's design, clearly identifying the customer's journey, while also helping the admin team address any required adjustments.
 ## Login
