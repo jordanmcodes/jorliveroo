@@ -34,6 +34,5 @@ urlpatterns = [
     path('saver-menu/', views.saver_menu, name ='saver_menu'),
     path('desserts/', views.desserts, name ='desserts'),
     path('kids-menu/', views.kids_menu, name ='kids_menu'),
+    path('basket/', views.basket, name='basket'),
 ]
-
-
