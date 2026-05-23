@@ -180,6 +180,7 @@ def basket (request):
      total = 0
      for item in items:
         total+= item.price
+        total = round(total,2)
      return render (request, 'menu/basket.html', {
          'items': items,
          'total': total
