@@ -92,8 +92,8 @@ def curry (request):
         basket.append(item_id)
         request.session['basket'] = basket
         chosen_item = item_id
-    items = FoodItem.objects.filter(category__name="Curry")
-    return render (request, 'menu/curry.html', {'items': items, 'chosen_item': chosen_item} )
+    items = FoodItem.objects.all()
+    return render (request, 'menu/curry.html', {'items': items} )
 
 # Vegan items are added to the basket from this section, displaying their price and name.
 
