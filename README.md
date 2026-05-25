@@ -266,7 +266,7 @@ In order to ensure that the application worked as intended, I conducted manual t
 | Testing Feature | Expected Outcome | Result |
 | --- | --- | --- |
 | Basket total not updating | Basket showing to two decimal places | Pass: After recalculation logic updated | 
-| CSS styling missing after deploying to Heroku | App shows perfectly when deployed | Pass: After static files corrected and moved to the correct file location 
+| CSS styling missing after deploying to Heroku | App shows perfectly when deployed | Pass: After static files corrected and moved to the correct file location | 
 ### Browser Testing
 The application was tested on the following platforms:
 * Chrome
