@@ -249,7 +249,24 @@ In order to ensure that the application worked as intended, I conducted manual t
 | Buttons | All buttons work properly and navigate to the correct page without any errors | Pass |
 
 ### Database Testing 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Create food item | New item was added to one of the food categories in the database | Pass | 
+| Edit food item | Adjust name, price, and category of a food item | Pass | 
+| Delete food item | Food item is removed successfully | Pass | 
+| Assign Category | Food item appears in the category assigned by the admin | Pass |
 
+### Defensive Testing 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Empty checkout form | form prevents submission | Fail | 
+| Multiple basket removals - Price | Price updates accordingly based on the remaining basket items | Pass | 
+| Remove item button | Item is removed correctly and no longer appears in the basket | Pass |
+### Notable bugs 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Basket total not updating | Basket showing to two decimal places | Pass: After recalculation logic updated | 
+| CSS styling missing after deploying to Heroku | App shows perfectly when deployed | Pass: After static files corrected and moved to the correct file location 
 ### Browser Testing
 The application was tested on the following platforms:
 * Chrome
