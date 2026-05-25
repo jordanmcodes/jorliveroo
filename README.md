@@ -220,19 +220,40 @@ Below are images from the application, including the home menu, one of the food 
 
 ## Testing
 In order to ensure that the application worked as intended, I conducted manual testing for the apps functions:
+### Desktop PC (1920 x 1080) 
 | Testing Feature | Expected Outcome | Result |
-|---|---|---|
-| Add a food item to the basket | The item and its price appears in the basket | Pass | 
-|Remove an item from the basket area | Item removed and the price altered to reflect new price | Pass |
-| Clear basket using clear button | Basket is removed and the price is reset to £0 | Pass |
-| Checkout form | Form allows me to type details in | Pass | 
-| Checkout button | After clicking, the order confirmation appears with customer details and expected wait time | Pass | 
+| --- | --- | --- |
+| Main menu layout | Food categories display correctly in the created grid layout for the menu | Pass | 
+| Navigation | When clicked, the buttons take the user directly to the category page they clicked on | Pass |
+| Total Price | Basket total updates correctly when the user adds new items | Pass |
+| Checkout button | When clicked, the application takes the user to the order confirmation page | Pass | 
+| Back to menu button | Button takes users back to the main navigation page | Pass |
+| CRUD functionality | Admin users can add, edit, and delete food items and categories from the database | Pass |
 
-### Device testing 
-This application was tested on a variety of devices, ensuring it can function without any errors regardless of the device:
-* Desktop PC 
-* Smartphone 
-* Tablet
+### Mobile Testing (393 x 851)
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Mobile responsiveness | Application layout appears correctly on mobile | Partial pass: Slight overlap on left side | 
+| Navigation buttons | Buttons are responsive and take the user to their desired page | Pass |
+| Basket | Basket updates correctly on mobile when user adds items to their basket | Pass | 
+| Checkout | Users can complete the checkout successfully | Pass | 
+| Font readability | Text is readable, and users don't have to zoom in to read it | Pass |
+
+### Tablet (834 x 1210) 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Responsive navigation menu | Layout adjusted correctly on the tablet screen | Pass | 
+| Button spacing | Buttons remain clickable with no overlap on the side of the screen | Pass | 
+| Basket | Basket is readable, with each item and its price displaying correctly | Pass | 
+| Form | Users can enter their details, and it appears on the confirmation page | Pass |
+| Buttons | All buttons work properly and navigate to the correct page without any errors | Pass |
+
+### Database Testing 
+
+### Browser Testing
+The application was tested on the following platforms:
+* Chrome
+* Firefox
 
 ## Validation 
 * HTML was validated via the W3C validation
@@ -323,3 +344,4 @@ I considered user comfort at every step of the design process, ensuring:
 
 ## Design and Audience Alignment 
 The goal was to provide simplicity for users; therefore, the design of the application had to match that, with limited pages, a central navigation system, and clear pricing to ensure there are no hidden fees. The application targeted adults and those who are financially capable of ordering food without putting themselves into a tough spot financially. 
+
