@@ -298,3 +298,27 @@ The following tools were used to test the validity of the code:
 * W3C CSS Validator
 * PEP8 Validator
 
+## Visual Design and Styling
+The main goal I wanted to ensure with the jorliveroo application is simplification. As stated above, many applications cause a lot of anxiety for their users. Whether that be complex menus or hidden fees, ordering food should not cause anxiety for hungry customers. I designed this application to remove the anxiety that thousands of people go through each day. 
+
+### Colour Scheme
+When thinking about the colours I would go for, I wanted to go with something warm and inviting to the users. This was to aid with the removal of anxiety, by not having colours that would be in their face:
+* The background is beige and is used across the entirety of the application, being the background for each of the pages.
+* I used a light blue colour with white text for the buttons. Again, making the users feel comfortable.
+* Lastly, the title of the page was black, to give the viewers a clear indication on what the page is about.
+
+Many applications can cause visual overload for users, which is why I went with the colours listed above to reduce the anxiety. 
+
+## Navigation
+To follow the simplicity vision I laid out for the application, the users are limited to three pages at max on the website. The food categories are listed on one main central hub, with the twelve category buttons and the basket button, displayed in a grid layout. When ordering food, you want a quick service, and this navigation menu achieves just that. 
+
+## Accessibility and Ease of Use
+I considered user comfort at every step of the design process, ensuring:
+* All buttons were easy to read
+* Font sizes were clear
+* No clashing colours
+* Simple navigation menu
+* No visual overload
+* Application was responsive
+
+
