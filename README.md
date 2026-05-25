@@ -304,7 +304,14 @@ This was added to prevent my static files from causing deployment issues during 
 * Click **Reveal Config Vars**
 * Add `DISABLE_COLLECTSTATIC`
 * For the value to the right of it, enter `1`
-
+## Database Setup
+To setup the database locally:
+* Install the project requirements:
+* Type; `pip install -requirements.txt`
+* Then: `python manage.py migrate`
+* To create a superuser account: `python manage.py create superuser`
+* Run server: `python manage.py runserver`
+### Procfile
 
 ## Security
 To ensure that Data Protection is present at all times, several measures were put in place: 
