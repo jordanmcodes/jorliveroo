@@ -277,23 +277,34 @@ The application was tested on the following platforms:
 * Likewise, CSS was validated using the W3C validation
 * Python in compliance with PEP8
 ## Deployment
+The jorliveroo food delivery application was deployed using Heroku. Below, you'll be able to find out how to create the Heroku application and also connect to the GitHub repository if you wish to deploy it locally.
+### Heroku
+* Log into Heroku
+* When you're on the Heroku dashboard, click **New**
+* Select **Create New App**
+* Enter your desired application name, in this instance, mine was jorliveroo
+* Select your region. For me, it was Europe
+* Click **Create App**
 
-My application was deployed using Heroku. Here is how you can deploy the application yourself:
-* Create an account on Heroku
-* In the top right corner click new 
-* New application
-* Connect the Github reponsitory to Heroku 
+### GitHub Authorisation
+* In Heroku, go to the deploy tab
+* Select GitHub as your desired deployment method
+* Authorise GitHub account to link to Heroku
+* Type in the repository: `jorliveroo`
+* Click connect
 
-https://github.com/jordanmcodes/jorliveroo.git
+### Config Vars
+The following Config Var was added in the Heroku settings for the deployment:
+* DISABLE_COLLECTSTATIC - Value: 1
 
-* Add config vars: * SECRET_KEY
-* Using Heroku, Deply the application 
+This was added to prevent my static files from causing deployment issues during the database setup. Below you will find out how to add Config Vars in Heroku:
+* Go to the Heroku dashboard
+* Select the application you just made, the one you linked to GitHub
+* Go to the **Settings** tab
+* Click **Reveal Config Vars**
+* Add `DISABLE_COLLECTSTATIC`
+* For the value to the right of it, enter `1`
 
-If you're deploying locally:
-* git close (insert repository)
-* cd deliveryproject
-* pip install -r requirements.txt
-* python manage.py runserver
 
 ## Security
 To ensure that Data Protection is present at all times, several measures were put in place: 
