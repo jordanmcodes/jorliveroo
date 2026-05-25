@@ -312,7 +312,23 @@ To setup the database locally:
 * To create a superuser account: `python manage.py create superuser`
 * Run server: `python manage.py runserver`
 ### Procfile
+`web: gunicorn deliveryproject.wsgi`
+### Requirements file
+`pip freeze > requirements.txt`
+### Static 
+`python manage.py collectstatic`
 
+### Local Deployment:
+Here is what to do if you wish to deploy the application locally: 
+* Open the terminal
+* Clone the git repository: https://github.com/jordanmcodes/jorliveroo.git
+* `git clone https://github.com/jordanmcodes/jorliveroo.git`
+* `cd deliveryproject`
+* `pip install -r requirements.txt`
+* `python manage.py migrate`
+* `python manage.py createsuperuser`
+* `python manage.py run server`
+* You'll recieve the local server link: `http://127.0.0.1:8000/`
 ## Security
 To ensure that Data Protection is present at all times, several measures were put in place: 
 ### CSRF
