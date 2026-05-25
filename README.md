@@ -321,4 +321,5 @@ I considered user comfort at every step of the design process, ensuring:
 * No visual overload
 * Application was responsive
 
-
+## Design and Audience Alignment 
+The goal was to provide simplicity for users; therefore, the design of the application had to match that, with limited pages, a central navigation system, and clear pricing to ensure there are no hidden fees. The application targeted adults and those who are financially capable of ordering food without putting themselves into a tough spot financially. 
