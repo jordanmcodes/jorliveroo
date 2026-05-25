@@ -309,7 +309,7 @@ To setup the database locally:
 * Install the project requirements:
 * Type; `pip install -requirements.txt`
 * Then: `python manage.py migrate`
-* To create a superuser account: `python manage.py create superuser`
+* To create a superuser account: `python manage.py createsuperuser`
 * Run server: `python manage.py runserver`
 ### Procfile
 `web: gunicorn deliveryproject.wsgi`
