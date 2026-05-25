@@ -307,7 +307,7 @@ This was added to prevent my static files from causing deployment issues during 
 ## Database Setup
 To setup the database locally:
 * Install the project requirements:
-* Type; `pip install -requirements.txt`
+* Type; `pip install -r requirements.txt`
 * Then: `python manage.py migrate`
 * To create a superuser account: `python manage.py createsuperuser`
 * Run server: `python manage.py runserver`
@@ -327,7 +327,7 @@ Here is what to do if you wish to deploy the application locally:
 * `pip install -r requirements.txt`
 * `python manage.py migrate`
 * `python manage.py createsuperuser`
-* `python manage.py run server`
+* `python manage.py runserver`
 * You'll recieve the local server link: `http://127.0.0.1:8000/`
 ## Security
 To ensure that Data Protection is present at all times, several measures were put in place: 
