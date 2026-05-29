@@ -6,6 +6,7 @@ class Category (models.Model):
     def __str__(self):
         return self.name 
 
+# Stores food items, their category, and their price
 class FoodItem(models.Model):
     name = models.CharField(max_length=100)
     price = models.FloatField()
