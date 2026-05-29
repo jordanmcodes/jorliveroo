@@ -4,6 +4,7 @@
 - [Introduction](#introduction)
 - [User Interactions](#user-interactions)
 - [Database Design](#database-design)
+- [Entity Relationship Diagram](#relationship-diagram)
 - [User Stories](#user-stories)
   - [Item Selection](#item-selection)
   - [Total Money Box](#total-money-box)
@@ -18,11 +19,18 @@
 - [Application planning](#application-planning)
 - [Project Management](#project-management)
 - [Features](#features)
+- [Administrative features](#administrative-features)
+- [Future planning](#future-planning)
 - [Application images](#application-images)
 - [Validation](#validation)
 - [Security Measures](#security)
 - [Deployment](#deployment)
 - [Testing](#testing)
+- [Technologies Used](#technologies-used)
+- [Visual Design](#visual-design-and-styling)
+- [Navigation](#navigation)
+- [Accessibility and Ease of Use](#accessibility-and-ease-of-use)
+- [Design and Audience Alignment](#design-and-audience-alignment)
 - [Acknowledgements](#acknowledgements)
   
   
@@ -50,7 +58,7 @@ My database will be easily manageable by any administrator who needs to step in 
 * item name
 * item price
 ## Relationship Diagram
-The foundations for the application was designed using a simple entity relationship diagram. The model ensures the food items are put in their respective categories correctly:
+The foundations for the application were designed using a simple entity relationship diagram. The model ensures the food items are put in their respective categories correctly:
 ![ERD](deliveryproject/static/images/erd.png)
 ### Relationships:
 Here is how those relationships above are linked to one another:
@@ -132,9 +140,9 @@ The primary target audience for those using the jorliveroo appplication is those
 The jorliveroo app is easy to use thanks to the clean, one-page user interface that has every menu accessible on one screen. As noted above, the prices are accurate, allowing for less anxiety and exact knowledge of the price of their order with VAT and delivery fees added onto the price from the beginning. 
 
 ## User Experience (UX)
-We have all had our bad experiences with delivery applications. Whether they are unable to locate a driver, cancel your order after waiting an hour, or not telling you the full story when it comes to price. 
+We have all had our bad experiences with delivery applications. Whether they are unable to locate a driver, cancel your order after waiting an hour, or do not tell you the full story when it comes to price. 
 
-The goals for the UX design aimed at keeping the application simple, with clear buttons, readable font sizes, variety of colours, a navigation system that is very simple to use, and a simple page layout, with no added extras. Transparency is also a key feature when it comes to the price, what you see is what you get, no hidden fees. 
+The goals for the UX design aimed at keeping the application simple, with clear buttons, readable font sizes, a variety of colours, a navigation system that is very simple to use, and a simple page layout, with no added extras. Transparency is also a key feature when it comes to the price; what you see is what you get, no hidden fees. 
 
 ### Accessibility
 As mentioned above, the application was designed with accessibility as a core focus:
@@ -147,29 +155,29 @@ As mentioned above, the application was designed with accessibility as a core fo
 ## Application planning 
 
 ### Wireframes 
-Before I began the creation of my application, I first needed to design it using wireframes. This gave me the foundations necessary to complete the full build of the application. The wireframes outlined the simplicity of the application, showcasing just how easy it is to navigation the jorliveroo food application. Below you can see the complete wireframes for my app:
+Before I began the creation of my application, I first needed to design it using wireframes. This gave me the foundations necessary to complete the full build of the application. The wireframes outlined the simplicity of the application, showcasing just how easy it is to navigate the jorliveroo food application. Below you can see the complete wireframes for my app:
 
 ![Wireframes](deliveryproject/static/images/wireframes.png)
 
 ## Project Management 
 
-The application was developed using Agile principles which was handled via Github's issues and commitments so that I can track my progress. From there, I was able to plan each stage of the project:
+The application was developed using Agile principles, which were handled via GitHub's issues and commitments, so that I can track my progress. From there, I was able to plan each stage of the project:
 
-A kanban board was created with each task getting its own lable to categorise its importance, for example each page needed a button, this button was a "Must Have". An example of a "if I get time" feature would be background music. 
+A kanban board was created with each task getting its own label to categorise its importance. For example, each page needed a button; this button was a "Must Have". An example of a "if I get time" feature would be background music. 
 
-As showcased above, User Stories were created to showcase the importance of each task the application can handle. These stories would showcase the perspective of both the user using the application, and a member of the developing team needing to make an adjustment to the database. 
+As showcased above, User Stories were created to showcase the importance of each task the application can handle. These stories would showcase the perspective of both the user using the application and a member of the developing team needing to make an adjustment to the database. 
 
 ### Version Control via Commits
-Github was used throughout the development phase of the project to support the Agile practices. This was achieved via commits, showcasing the progress I made at each step. 
+GitHub was used throughout the development phase of the project to support the Agile practices. This was achieved via commits, showcasing the progress I made at each step. 
 
 Commits allowed me to:
-* Develop the application safely even with errors as I can go back and amend them.
+* Develop the application safely, even with errors, as I can go back and amend them.
 * Monitor the progress made. 
 * Reflect on the changes that were made to the application throughout its development cycle. 
 
 ### Benefits of Agile
 
-Agile practices significantly improved my approach to the applications development:
+Agile practices significantly improved my approach to application development:
 
 * My organisational skills were kept in line thanks to the Kanban board.
 * Had the ability to go back if a critical error was made.
@@ -180,7 +188,7 @@ Below, you can see an image of the Kanban board when I first began the project:
 ![Kanban](deliveryproject/static/images/kanban.png)
 
 ## Features
-These are the features that are the heart and soul of the application, without these, the app wouldn't function:
+These are the features that are the heart and soul of the application; without these, the app wouldn't function:
 * 12 food categories
 * 12 category pages
 * Go to basket button and page
@@ -220,49 +228,121 @@ Below are images from the application, including the home menu, one of the food 
 
 ## Testing
 In order to ensure that the application worked as intended, I conducted manual testing for the apps functions:
+### Desktop PC (1920 x 1080) 
 | Testing Feature | Expected Outcome | Result |
-|---|---|---|
-| Add a food item to the basket | The item and its price appears in the basket | Pass | 
-|Remove an item from the basket area | Item removed and the price altered to reflect new price | Pass |
-| Clear basket using clear button | Basket is removed and the price is reset to £0 | Pass |
-| Checkout form | Form allows me to type details in | Pass | 
-| Checkout button | After clicking, the order confirmation appears with customer details and expected wait time | Pass | 
+| --- | --- | --- |
+| Main menu layout | Food categories display correctly in the created grid layout for the menu | Pass | 
+| Navigation | When clicked, the buttons take the user directly to the category page they clicked on | Pass |
+| Total Price | Basket total updates correctly when the user adds new items | Pass |
+| Checkout button | When clicked, the application takes the user to the order confirmation page | Pass | 
+| Back to menu button | Button takes users back to the main navigation page | Pass |
+| CRUD functionality | Admin users can add, edit, and delete food items and categories from the database | Pass |
 
-### Device testing 
-This application was tested on a variety of devices, ensuring it can function without any errors regardless of the device:
-* Desktop PC 
-* Smartphone 
-* Tablet
+### Mobile Testing (393 x 851)
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Mobile responsiveness | Application layout appears correctly on mobile | Partial pass: Slight overlap on left side | 
+| Navigation buttons | Buttons are responsive and take the user to their desired page | Pass |
+| Basket | Basket updates correctly on mobile when user adds items to their basket | Pass | 
+| Checkout | Users can complete the checkout successfully | Pass | 
+| Font readability | Text is readable, and users don't have to zoom in to read it | Pass |
+
+### Tablet (834 x 1210) 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Responsive navigation menu | Layout adjusted correctly on the tablet screen | Pass | 
+| Button spacing | Buttons remain clickable with no overlap on the side of the screen | Pass | 
+| Basket | Basket is readable, with each item and its price displaying correctly | Pass | 
+| Form | Users can enter their details, and it appears on the confirmation page | Pass |
+| Buttons | All buttons work properly and navigate to the correct page without any errors | Pass |
+
+### Database Testing 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Create food item | New item was added to one of the food categories in the database | Pass | 
+| Edit food item | Adjust name, price, and category of a food item | Pass | 
+| Delete food item | Food item is removed successfully | Pass | 
+| Assign Category | Food item appears in the category assigned by the admin | Pass |
+
+### Defensive Testing 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Empty checkout form | form prevents submission | Fail | 
+| Multiple basket removals - Price | Price updates accordingly based on the remaining basket items | Pass | 
+| Remove item button | Item is removed correctly and no longer appears in the basket | Pass |
+### Notable bugs 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Basket total not updating | Basket showing to two decimal places | Pass: After recalculation logic updated | 
+| CSS styling missing after deploying to Heroku | App shows perfectly when deployed | Pass: After static files corrected and moved to the correct file location | 
+### Browser Testing
+The application was tested on the following platforms:
+* Chrome
+* Firefox
 
 ## Validation 
 * HTML was validated via the W3C validation
 * Likewise, CSS was validated using the W3C validation
 * Python in compliance with PEP8
 ## Deployment
+The jorliveroo food delivery application was deployed using Heroku. Below, you'll be able to find out how to create the Heroku application and also connect to the GitHub repository if you wish to deploy it locally.
+### Heroku
+* Log into Heroku
+* When you're on the Heroku dashboard, click **New**
+* Select **Create New App**
+* Enter your desired application name, in this instance, mine was jorliveroo
+* Select your region. For me, it was Europe
+* Click **Create App**
 
-My application was deployed using Heroku. Here is how you can deploy the application yourself:
-* Create an account on Heroku
-* In the top right corner click new 
-* New application
-* Connect the Github reponsitory to Heroku 
+### GitHub Authorisation
+* In Heroku, go to the deploy tab
+* Select GitHub as your desired deployment method
+* Authorise GitHub account to link to Heroku
+* Type in the repository: `jorliveroo`
+* Click connect
 
-https://github.com/jordanmcodes/jorliveroo.git
+### Config Vars
+The following Config Var was added in the Heroku settings for the deployment:
+* DISABLE_COLLECTSTATIC - Value: 1
 
-* Add config vars: * SECRET_KEY
-* Using Heroku, Deply the application 
+This was added to prevent my static files from causing deployment issues during the database setup. Below you will find out how to add Config Vars in Heroku:
+* Go to the Heroku dashboard
+* Select the application you just made, the one you linked to GitHub
+* Go to the **Settings** tab
+* Click **Reveal Config Vars**
+* Add `DISABLE_COLLECTSTATIC`
+* For the value to the right of it, enter `1`
+## Database Setup
+To setup the database locally:
+* Install the project requirements:
+* Type; `pip install -r requirements.txt`
+* Then: `python manage.py migrate`
+* To create a superuser account: `python manage.py createsuperuser`
+* Run server: `python manage.py runserver`
+### Procfile
+`web: gunicorn deliveryproject.wsgi`
+### Requirements file
+`pip freeze > requirements.txt`
+### Static 
+`python manage.py collectstatic`
 
-If you're deploying locally:
-* git close (insert repository)
-* cd deliveryproject
-* pip install -r requirements.txt
-* python manage.py runserver
-
+### Local Deployment:
+Here is what to do if you wish to deploy the application locally: 
+* Open the terminal
+* Clone the git repository: https://github.com/jordanmcodes/jorliveroo.git
+* `git clone https://github.com/jordanmcodes/jorliveroo.git`
+* `cd deliveryproject`
+* `pip install -r requirements.txt`
+* `python manage.py migrate`
+* `python manage.py createsuperuser`
+* `python manage.py runserver`
+* You'll recieve the local server link: `http://127.0.0.1:8000/`
 ## Security
 To ensure that Data Protection is present at all times, several measures were put in place: 
 ### CSRF
 All forms in the jorliveroo application have CSRF protection enabled. This is to prevent attacks such as forgery.
 ### SECRET KEY
-All sensitive and delicate information such as SECRET KEYS are hidden using environment variables.
+All sensitive and delicate information, such as SECRET KEYS, is hidden using environment variables.
 ### DEBUG Mode 
 DEBUG Mode is turned off in the production of the jorliveroo application. 
 
@@ -271,4 +351,56 @@ All supportive code for this application came from the following sources:
 * W3Schools
 * Django Documentation
 * MDN Web Docs
-* Code Institute 
+* Code Institute
+
+## Technologies used
+
+During the development process of the jorliveroo application, several coding languages were used, including: 
+* HTML
+* CSS
+* Python
+
+### Framework and Libraries
+To support the development of the jorliveroo application, the following was used:
+* Django - This was the heart of the app, used as the main backend, storing the food information, prices, and categories.
+* Bootstrap - Bootstrap was used for the layout and styling of the application.
+
+### Platforms
+* GitHub
+* Heroku
+* PostgreSQL
+* Figma
+* VS Code
+
+### Validation
+The following tools were used to test the validity of the code:
+* W3C HTML Validator
+* W3C CSS Validator
+* PEP8 Validator
+
+## Visual Design and Styling
+The main goal I wanted to ensure with the jorliveroo application is simplification. As stated above, many applications cause a lot of anxiety for their users. Whether that be complex menus or hidden fees, ordering food should not cause anxiety for hungry customers. I designed this application to remove the anxiety that thousands of people go through each day. 
+
+### Colour Scheme
+When thinking about the colours I would go for, I wanted to go with something warm and inviting to the users. This was to aid with the removal of anxiety, by not having colours that would be in their face:
+* The background is beige and is used across the entirety of the application, being the background for each of the pages.
+* I used a light blue colour with white text for the buttons. Again, making the users feel comfortable.
+* Lastly, the title of the page was black, to give the viewers a clear indication on what the page is about.
+
+Many applications can cause visual overload for users, which is why I went with the colours listed above to reduce the anxiety. 
+
+## Navigation
+To follow the simplicity vision I laid out for the application, the users are limited to three pages at max on the website. The food categories are listed on one main central hub, with the twelve category buttons and the basket button, displayed in a grid layout. When ordering food, you want a quick service, and this navigation menu achieves just that. 
+
+## Accessibility and Ease of Use
+I considered user comfort at every step of the design process, ensuring:
+* All buttons were easy to read
+* Font sizes were clear
+* No clashing colours
+* Simple navigation menu
+* No visual overload
+* Application was responsive
+
+## Design and Audience Alignment 
+The goal was to provide simplicity for users; therefore, the design of the application had to match that, with limited pages, a central navigation system, and clear pricing to ensure there are no hidden fees. The application targeted adults and those who are financially capable of ordering food without putting themselves into a tough spot financially. 
+
