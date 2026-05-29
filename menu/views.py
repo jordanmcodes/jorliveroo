@@ -15,7 +15,8 @@ def burgers (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Burgers")
-        return render (request, 'menu/burgers.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/burgers.html', {'items': items, 'chosen_item': chosen_item,'basket_items': basket_items} )
 
     # Pasta is added to the basket from this section, displaying their price and name.
 
@@ -42,7 +43,8 @@ def pizza (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Pizza")
-        return render (request, 'menu/pizza.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/pizza.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Fish items are added to the basket from this section, displaying their price and name.
 
@@ -55,7 +57,8 @@ def fish (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Fish")
-        return render (request, 'menu/fish.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/fish.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Soups are added to the basket from this section, displaying their price and name.
 
@@ -68,7 +71,8 @@ def soup (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Soup")
-        return render (request, 'menu/soup.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/soup.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Sides are added to the basket from this section, displaying their price and name.
 
@@ -81,7 +85,8 @@ def sides (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Sides")
-        return render (request, 'menu/sides.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/sides.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Curry items are added to the basket from this section, displaying their price and name.
 
@@ -94,7 +99,8 @@ def curry (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Curry")
-        return render (request, 'menu/curry.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/curry.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Vegan items are added to the basket from this section, displaying their price and name.
 
@@ -107,7 +113,8 @@ def vegan (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Vegan")
-        return render (request, 'menu/vegan.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/vegan.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Gluten free items are added to the basket from this section, displaying their price and name.
 
@@ -120,7 +127,8 @@ def gluten_free (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Gluten Free")
-        return render (request, 'menu/gluten_free.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/gluten_free.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Saver menu items are added to the basket from this section, displaying their price and name.
 
@@ -133,7 +141,8 @@ def saver_menu (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Saver Menu")
-        return render (request, 'menu/saver_menu.html', {'items': items, 'chosen_item': chosen_item} ) 
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/saver_menu.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} ) 
 
     # Desserts are added to the basket from this section, displaying their price and name.
 
@@ -146,7 +155,8 @@ def desserts (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Desserts")
-        return render (request, 'menu/desserts.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/desserts.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Kids items are added to the basket from this section, displaying their price and name.
 
@@ -159,7 +169,8 @@ def kids_menu (request):
             request.session['basket'] = basket
             chosen_item = item_id
         items = FoodItem.objects.filter(category__name="Kids Menu")
-        return render (request, 'menu/kids_menu.html', {'items': items, 'chosen_item': chosen_item} )
+        basket_items = FoodItem.objects.filter(id__in=basket)
+        return render (request, 'menu/kids_menu.html', {'items': items, 'chosen_item': chosen_item, 'basket_items': basket_items} )
 
     # Handles the baskets functionality including removing items, checking out, and calculating the total price.
 def basket (request):
