@@ -384,7 +384,6 @@ During the development process of the jorliveroo application, several coding lan
 ### Framework and Libraries
 To support the development of the jorliveroo application, the following was used:
 * Django - This was the heart of the app, used as the main backend, storing the food information, prices, and categories.
-* Bootstrap - Bootstrap was used for the layout and styling of the application.
 
 ### Platforms
 * GitHub
