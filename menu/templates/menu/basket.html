@@ -39,9 +39,9 @@
 
         <form method="post">
         {% csrf_token %}
-        <input type="text" name="address" placeholder="Please enter your address">
-        <input type="text" name="phone" placeholder="Please enter your mobile number">
-        <input type="text" name="card" placeholder="Please enter your card number">
+        <input type="text" name="address" placeholder="Home Address" required>
+        <input type="text" name="phone" placeholder="Mobile Number" required>
+        <input type="text" name="card" placeholder="Card number" required>
         <input type="submit" name="checkout" value="Checkout">
     </form>
      <form method="post">
