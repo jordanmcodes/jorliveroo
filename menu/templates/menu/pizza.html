@@ -27,6 +27,10 @@
         </div>
         {% endfor %}
         </div>
+    <h2>Your Current Basket</h2>
+{% for basket_item in basket_items%}
+<p>{{ basket_item.name}}</p>
+{% endfor %}
 
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
