@@ -25,6 +25,12 @@
     <input type="hidden" name="remove_item" value="{{ item.id }}">
     <input type="submit" value="Remove">
    </form>
+   <form method="post">
+        {% csrf_token %}
+    <input type="hidden" name ="add_item" value="{{ item.id }}">
+    <input type="submit" value="+1">
+
+   </form>
     {% endfor %}
     <!-- When items are selected, the total price will be displayed here -->
 
