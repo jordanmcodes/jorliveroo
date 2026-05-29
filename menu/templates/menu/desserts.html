@@ -1,4 +1,4 @@
-{% load static %}
+  {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +8,8 @@
     <title>Desserts</title>
 </head>
 <body>
-  {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curry</title>
-</head>
-<body>
+        <!--This page displays all of the items for the Desserts category-->
+
     <h1> Desserts</h1>
      <div class="menu-style">
         {% if chosen_item %}
@@ -39,7 +31,5 @@
     <a href="{% url 'menu' %}" class= "backtomenubutton">
             Main Menu
             </a>
-</body>
-</html>
 </body>
 </html>
