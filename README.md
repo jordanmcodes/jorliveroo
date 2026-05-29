@@ -275,6 +275,27 @@ In order to ensure that the application worked as intended, I conducted manual t
 | --- | --- | --- |
 | Basket total not updating | Basket showing to two decimal places | Pass: After recalculation logic updated | 
 | CSS styling missing after deploying to Heroku | App shows perfectly when deployed | Pass: After static files corrected and moved to the correct file location | 
+
+### Responsive Testing 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+|Desktop (1920x1080)| Menu buttons appear in a three-column layout in the center of the page| Pass |
+|Changing window size | When changing the size of the window, the buttons change accordingly | Pass | 
+| Tablet (834 x 1210) | Menu buttons remains visible on a smaller device | Pass |
+| Mobile (393x851) | Buttons appear vertically on the mobile device with no overlap or missing buttons | Pass | 
+| Welcome text | Text remains visible without horizontal scrolling across various devices and sizes | Pass | 
+
+### Database management testing 
+| Testing Feature | Expected Outcome | Result |
+| --- | --- | --- |
+| Retrieve food items | Food items from the Django database appear in their respective category pages | Pass |
+| Food relationship | Food items only appear in the category they are assigned to. For example, a Chicken Feast Pizza will only appear in the pizza section | Pass | 
+| Adding item to basket | When an item is selected, that item appears in the user's basket | Pass | 
+| Remove item from basket | Selected item is removed from the basket, with the total price adjusting accordingly. | Pass | 
+| Increase item quantity | When a user presses the +1 button next to an item, that same item is again added to the basket, with the price adjusted. | Pass | 
+| Total price | Total price reflects the items that are currently in the basket | Pass | 
+| Checkout details | User-entered address, number, and card details are successfully processed during checkout | Pass |
+
 ### Browser Testing
 The application was tested on the following platforms:
 * Chrome
