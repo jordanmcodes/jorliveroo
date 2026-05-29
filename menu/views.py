@@ -166,6 +166,7 @@ def basket (request):
         if request.method == "POST":
             remove_item = request.POST.get("remove_item")
             checkout=request.POST.get("checkout")
+            add_item= request.POST.get("add_item")
             if checkout:
                 address = request.POST.get("address")
                 phone = request.POST.get("phone")
@@ -174,6 +175,9 @@ def basket (request):
             if remove_item:
                 basket.remove(remove_item)
                 request.session['basket'] = basket
+            elif add_item:
+                  basket.append(add_item)
+                  request.session['basket'] = basket
             else:
                 request.session['basket'] = []
         items = FoodItem.objects.filter(id__in=basket)
