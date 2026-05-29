@@ -180,7 +180,9 @@ def basket (request):
                   request.session['basket'] = basket
             else:
                 request.session['basket'] = []
-        items = FoodItem.objects.filter(id__in=basket)
+        items = []
+        for item_id in basket:
+              items.append(FoodItem.objects.get(id=item_id))
         total = 0
         for item in items:
             total+= item.price
