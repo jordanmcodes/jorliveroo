@@ -195,7 +195,7 @@ These are the features that are the heart and soul of the application; without t
 * Add items to the basket
 * Remove items from the basket
 * View price of the order at the basket page
-* Checkout details: AddresS, Number, and how long the order will take
+* Checkout details: Address, Number, and how long the order will take
 * Order confirmation
 
 ### Administrative features
@@ -347,17 +347,22 @@ To setup the database locally:
 ### Static 
 `python manage.py collectstatic`
 
-### Local Deployment:
+### Cloning:
 Here is what to do if you wish to deploy the application locally: 
-* Open the terminal
-* Clone the git repository: https://github.com/jordanmcodes/jorliveroo.git
-* `git clone https://github.com/jordanmcodes/jorliveroo.git`
-* `cd deliveryproject`
-* `pip install -r requirements.txt`
-* `python manage.py migrate`
-* `python manage.py createsuperuser`
-* `python manage.py runserver`
-* You'll recieve the local server link: `http://127.0.0.1:8000/`
+* Navigate to the GitHub repository `https://github.com/jordanmcodes/jorliveroo`
+* Click the green code button
+* Copy the URL
+* In visual studio code, open the terminal
+* Type: git clone https://github.com/jordanmcodes/jorliveroo.git
+* After the cloning has finished, type `cd deliveryproject` into the terminal
+* Next, you need to install the project requirements:
+* Type: `pip install -r requirements.txt`
+* Then: `python manage.py migrate`
+* If you wish to create a superuser, type `python manage.py createsuperuser`
+* Lastly, run: `python manage.py runserver`
+* Your application will then be available at `http://127.0.0.1:8000/`
+
+
 ## Security
 To ensure that Data Protection is present at all times, several measures were put in place: 
 ### CSRF
