@@ -5,7 +5,7 @@
     color: white;
     padding: 15px 32px;
     text-align: center;
-    width:120px;
+    width:100%;
     text-decoration: none;
     display: block;
     font-size: 20px;
@@ -14,13 +14,12 @@
 }
 
 /* Used to create the grid for the buttons*/
-@media screen and (max-width:768px) {
-    
-
 .menubuttons {
     display: grid;
-    grid-template-columns: auto;
-}
+    grid-template-columns: auto auto auto;
+    gap:15px;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* Used to style the main background of the page */
@@ -48,4 +47,10 @@ body {
 
 .backtomenubutton:hover{
     background-color: gray;
+}
+
+@media screen and (max-width:768px){
+.menubuttons{
+    grid-template-columns: auto;
+}    
 }
