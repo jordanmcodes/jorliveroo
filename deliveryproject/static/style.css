@@ -20,7 +20,7 @@
     gap:15px;
     max-width: 600px;
     justify-content: center;
-    margin-top: 140px;
+    margin: 140px auto 0 auto;
 }
 
 /* Used to style the main background of the page */
