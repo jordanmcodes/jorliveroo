@@ -40,8 +40,8 @@
         <form method="post">
         {% csrf_token %}
         <input type="text" name="address" placeholder="Home Address" required>
-        <input type="tel" name="phone" placeholder="Mobile Number" pattern="[0-9]{11}" title="Please enter a valid phone number(11 digits)"required>
-        <input type="text" name="card" placeholder="Card number" pattern="[0-9]{16}" title="Please enter a valid 16 digit card number" required>
+        <input type="tel" name="phone" placeholder="Mobile Number" pattern="[0-9]{11}" title="11 digits required"required>
+        <input type="text" name="card" placeholder="Card number" pattern="[0-9]{16}" title="16 digits required" required>
         <input type="submit" name="checkout" value="Checkout">
     </form>
      <form method="post">
