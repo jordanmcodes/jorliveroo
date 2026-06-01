@@ -8,7 +8,7 @@
 - [User Stories](#user-stories)
   - [Item Selection](#item-selection)
   - [Total Money Box](#total-money-box)
-  - [Category button and pop-up menu](#category-button-and-pop-up-menu)
+  - [Category button and new page](#category-button-and-new-page)
   - [Proceed to checkout button](#proceed-to-checkout-button)
   - [Adding a new item to the database](#adding-a-new-item-to-the-database)
   - [Editing a current item in the database](#editing-a-current-item-in-the-database)
@@ -92,13 +92,13 @@ The user stories for the Jorliveroo food delivery application were created with 
      *  Total money box at the bottom of the page.
      *  The user can clearly see the total of their order.
      *  Text must be bold, black, Century Gothic, and 20px.
- ## Category button and pop-up menu  
+ ## Category button and new page
  * **As a user:** Customer
- * **I want to be able to**: Click on a category button, and the respective menu appears.
+ * **I want to be able to**: Click on a category button, and the app takes me to the respective menu.
  * **So that**: I can decide which of the respective items I want to add to my basket.
  * **Acceptance Criteria**:
-    * Pop-up menu for each category.
-    * The user can add items from the pop-up menu directly into their basket via the + button next to the item.
+    * Menu page for each category.
+    * The user can add items from the menu pages directly into their basket via the + button next to the item.
     * Menu colour must be blue, price figures box red, "add" box yellow, text size 20 px, and font Century Gothic.
  ## Proceed to checkout button 
  * **As a user:** Customer
