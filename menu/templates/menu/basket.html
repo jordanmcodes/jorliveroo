@@ -40,7 +40,7 @@
         <form method="post">
         {% csrf_token %}
         <input type="text" name="address" placeholder="Home Address" required>
-        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <input type="number" name="phone" placeholder="Mobile Number" required>
         <input type="number" name="card" placeholder="Card number" required>
         <input type="submit" name="checkout" value="Checkout">
     </form>
