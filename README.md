@@ -53,16 +53,18 @@ Here is a full list of interactions that a user can have with my application:
 * An admin can remove one of the existing items from the database
 ## Database design 
 My database will be easily manageable by any administrator who needs to step in at any given time. The database structure is as follows:
-* id
-* item category
-* item name
-* item price
+* Category: This is where the different food categories are stored within the application, for example, Pizza, Burgers, Fish, and so on.
+* FoodItem: Stores the individual food items, linking them via item name, price, and category relationship. Each food item belongs to one singular category through a foreign key relationship.
+* Order: Stores the customer's checkout information, including their address, phone number, and card details.
+* OrderItem: Acts as a connector table between orders and food items. This allows multiple food items to be paired with a single order. This structure is efficient as it allows food items to be organised while enabling admins to manage menu items and supporting the checkout process for customers. 
 ## Relationship Diagram
 The foundations for the application were designed using a simple entity relationship diagram. The model ensures the food items are put in their respective categories correctly:
 ![ERD](deliveryproject/static/images/entityrelationshipdiagram.png)
 ### Relationships:
 Here is how those relationships above are linked to one another:
 * Each food item belongs to a singular category.
+* Each order can contain multiple food items through OrderItem.
+* Each order stores customer delivery details, including address and phone number.
 * One category will contain multiple food items.
 * Food items are linked to categories using a foreign key. 
 * Database structure allows administrators to add, edit, and remove items from categories.
