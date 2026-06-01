@@ -59,7 +59,7 @@ My database will be easily manageable by any administrator who needs to step in 
 * item price
 ## Relationship Diagram
 The foundations for the application were designed using a simple entity relationship diagram. The model ensures the food items are put in their respective categories correctly:
-![ERD](deliveryproject/static/images/erd.png)
+![ERD](deliveryproject/static/images/erd.png
 ### Relationships:
 Here is how those relationships above are linked to one another:
 * Each food item belongs to a singular category.
