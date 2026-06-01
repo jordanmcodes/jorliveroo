@@ -268,7 +268,7 @@ In order to ensure that the application worked as intended, I conducted manual t
 ### Defensive Testing 
 | Testing Feature | Expected Outcome | Result |
 | --- | --- | --- |
-| Empty checkout form | form prevents submission | Fail | 
+| Empty checkout form | form prevents submission | Pass | 
 | Multiple basket removals - Price | Price updates accordingly based on the remaining basket items | Pass | 
 | Remove item button | Item is removed correctly and no longer appears in the basket | Pass |
 ### Notable bugs 
