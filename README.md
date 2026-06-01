@@ -8,7 +8,7 @@
 - [User Stories](#user-stories)
   - [Item Selection](#item-selection)
   - [Total Money Box](#total-money-box)
-  - [Category button and pop-up menu](#category-button-and-pop-up-menu)
+  - [Category button and new page](#category-button-and-new-page)
   - [Proceed to checkout button](#proceed-to-checkout-button)
   - [Adding a new item to the database](#adding-a-new-item-to-the-database)
   - [Editing a current item in the database](#editing-a-current-item-in-the-database)
@@ -36,7 +36,8 @@
   
 
 ## Introduction
-Jorliveroo is a web application for users seeking a simplified food ordering experience. Have you been put off by ordering food simply because of the countless pages, tedious advertisements, and hidden fees? With Jorliveroo, I have simplified this experience, stripping away the tedious components that competitors offer. The main menu will host the twelve different categories, each with its own pop-up menu. From there, users will be able to select the items they want to add from that category. At the bottom of the main menu is the total fee including VAT. The application is designed to lower the anxiety challenges one could face when ordering food. Whether that be unsure of the total fee, or put off by the various pages and advertisements, Jorliveroo is here to lower that anxiety. The users will have a unique login so that they can gain access to the application. 
+Jorliveroo is a web application for users seeking a simplified food ordering experience. Have you been put off by ordering food simply because of the countless pages, tedious advertisements, and hidden fees? With Jorliveroo, I have simplified this experience, stripping away the tedious components that competitors offer. The main menu will host the twelve different categories, each with its own pop-up menu. From there, users will be able to select the items they want to add from that category. At the bottom of the main menu is the total fee including VAT. The application is designed to lower the anxiety challenges one could face when ordering food. Whether that be unsure of the total fee, or put off by the various pages and advertisements, Jorliveroo is here to lower that anxiety.
+
 ## Why my application is easy to use
 My application is easy to use because I have simplified the food ordering system. Instead of multiple tabs, the menus are accessible under one page, with pop-up menus instead of a new page. This will make the application more efficient than its competitors due to its easy-to-use buttons, clear structure, and more. Not only will it be user-friendly through its clear structure, but the buttons will also be clear, color-blind friendly, with font-sizes that are readable on a variety of devices, and a color scheme that matches the core design of the application.
 ## User interactions 
@@ -53,29 +54,24 @@ Here is a full list of interactions that a user can have with my application:
 * An admin can remove one of the existing items from the database
 ## Database design 
 My database will be easily manageable by any administrator who needs to step in at any given time. The database structure is as follows:
-* id
-* item category
-* item name
-* item price
+* Category: This is where the different food categories are stored within the application, for example, Pizza, Burgers, Fish, and so on.
+* FoodItem: Stores the individual food items, linking them via item name, price, and category relationship. Each food item belongs to one singular category through a foreign key relationship.
+* Order: Stores the customer's checkout information, including their address, phone number, and card details.
+* OrderItem: Acts as a connector table between orders and food items. This allows multiple food items to be paired with a single order. This structure is efficient as it allows food items to be organised while enabling admins to manage menu items and supporting the checkout process for customers. 
 ## Relationship Diagram
 The foundations for the application were designed using a simple entity relationship diagram. The model ensures the food items are put in their respective categories correctly:
-![ERD](deliveryproject/static/images/erd.png)
+![ERD](deliveryproject/static/images/entityrelationshipdiagram.png)
 ### Relationships:
 Here is how those relationships above are linked to one another:
 * Each food item belongs to a singular category.
+* Each order can contain multiple food items through OrderItem.
+* Each order stores customer delivery details, including address and phone number.
 * One category will contain multiple food items.
 * Food items are linked to categories using a foreign key. 
 * Database structure allows administrators to add, edit, and remove items from categories.
 ## User Stories
 The user stories for the Jorliveroo food delivery application were created with MoSCoW methodology in mind. These user stories helped with the application's design, clearly identifying the customer's journey, while also helping the admin team address any required adjustments.
-## Login
-* **As a user:** Customer
-* **I want to be able to**: Login using my username and password.
-* **So that**: I can access the food delivery application.
-* **Acceptance Criteria**:
-  * Simple login validation form that requires only a username and password box. 
-  * Once the username and password are entered correctly, users are directed to the main menu.
-  * If the password and or username is incorrect, an error message will appear.
+
 ## Item selection
 * **As a user:** Customer
 * **I want to be able to**: Choose from a variety of food items on one page.
@@ -92,13 +88,13 @@ The user stories for the Jorliveroo food delivery application were created with 
      *  Total money box at the bottom of the page.
      *  The user can clearly see the total of their order.
      *  Text must be bold, black, Century Gothic, and 20px.
- ## Category button and pop-up menu  
+ ## Category button and new page
  * **As a user:** Customer
- * **I want to be able to**: Click on a category button, and the respective menu appears.
+ * **I want to be able to**: Click on a category button, and the app takes me to the respective menu.
  * **So that**: I can decide which of the respective items I want to add to my basket.
  * **Acceptance Criteria**:
-    * Pop-up menu for each category.
-    * The user can add items from the pop-up menu directly into their basket via the + button next to the item.
+    * Menu page for each category.
+    * The user can add items from the menu pages directly into their basket via the + button next to the item.
     * Menu colour must be blue, price figures box red, "add" box yellow, text size 20 px, and font Century Gothic.
  ## Proceed to checkout button 
  * **As a user:** Customer
@@ -218,7 +214,7 @@ Below are images from the application, including the home menu, one of the food 
 ![Menu](deliveryproject/static/images/mainmenu.png)
 
 ### Category page
-![Gluten Free](deliveryproject/static/images/glutenfree.png)
+![Gluten Free](deliveryproject/static/images/pizza.png)
 
 ### Basket
 ![Basket](deliveryproject/static/images/basketpage.png)
@@ -226,6 +222,11 @@ Below are images from the application, including the home menu, one of the food 
 ### Order Confirmation
 ![Order Confirmation](deliveryproject/static/images/orderconfirmation.png)
 
+### Please enter details
+![Please fill](deliveryproject/static/images/pleasefill.png)
+
+### Mobile view
+![Mobile view](deliveryproject/static/images/mobileview.png)
 ## Testing
 In order to ensure that the application worked as intended, I conducted manual testing for the apps functions:
 ### Desktop PC (1920 x 1080) 
