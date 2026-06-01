@@ -223,7 +223,7 @@ Below are images from the application, including the home menu, one of the food 
 ![Order Confirmation](deliveryproject/static/images/orderconfirmation.png)
 
 ### Please enter details
-![Please fill](deliveryproject/static/images/pleasefill.png)
+![Please fill](deliveryproject/static/images/enterdetails.png)
 
 ### Mobile view
 ![Mobile view](deliveryproject/static/images/mobileview.png)
