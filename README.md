@@ -214,7 +214,7 @@ Below are images from the application, including the home menu, one of the food 
 ![Menu](deliveryproject/static/images/mainmenu.png)
 
 ### Category page
-![Gluten Free](deliveryproject/static/images/glutenfree.png)
+![Gluten Free](deliveryproject/static/images/pizza.png)
 
 ### Basket
 ![Basket](deliveryproject/static/images/basketpage.png)
@@ -222,6 +222,11 @@ Below are images from the application, including the home menu, one of the food 
 ### Order Confirmation
 ![Order Confirmation](deliveryproject/static/images/orderconfirmation.png)
 
+### Please enter details
+![Please fill](deliveryproject/static/images/pleasefill.png)
+
+### Mobile view
+![Mobile view](deliveryproject/static/images/mobileview.png)
 ## Testing
 In order to ensure that the application worked as intended, I conducted manual testing for the apps functions:
 ### Desktop PC (1920 x 1080) 
